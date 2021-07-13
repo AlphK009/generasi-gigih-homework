@@ -1,0 +1,47 @@
+*{
+    margin: 0 auto;
+}
+.song-wrapper{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    width: 600px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: rgb(97, 82, 82);
+    margin-left: 20px;
+    align-items: center;
+}
+.content-wrapper{
+    color:white;
+    display: inline-block;
+    margin: 0 px;
+}
+.content-wrapper label{
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    margin-top: 5px;
+    background-color: rgb(23, 92, 23);
+    border-radius: 12px;
+    padding-top: 5px;
+}
+.update{
+    border-radius: 6px;
+    width: 150px;
+    height: 30px;
+    display: block;
+    background-color: rgb(21, 138, 21);
+    font-weight: bold;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    padding: 5px;
+}
+.image{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
