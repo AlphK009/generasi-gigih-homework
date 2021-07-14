@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import SongComp from '../../component/SongComp/SongComp';
+import SongComp from '../../component/SongComponent/SongComponent';
 import './HomeWork.css'
 
 
