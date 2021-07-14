@@ -4,9 +4,8 @@ import data from '../../sample';
 
 const SongComp = () => {
     return(
-        <Fragment>
-        <div className="song-wrapper">
-            <div className="imgSong">
+         <div className="song-wrapper">
+            <div className="img-song">
         <img className="image" src={data.album.images[0].url} alt="song"></img>
         </div>
         <div className="content-wrapper">
@@ -16,8 +15,7 @@ const SongComp = () => {
         <button className="update"> Select </button>
         </div>
         </div>
-        </Fragment>
-        
+   
     )
 }
 export default SongComp; 
