@@ -12,7 +12,7 @@ class Playlist extends Component {
           headers: { Authorization: "Bearer " + props.params.access_token },
         })
           .then((response) => response.json())
-          .then((response) => setResult(response.tracks));
+          .then((response) => this.setState(response.tracks));
       };
     }
     render()
