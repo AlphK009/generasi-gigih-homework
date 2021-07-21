@@ -1,26 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import WebApp from './component/Login';
+import Playlist from './component/Search';
+import { useState } from "react";
+
 
 function App() {
-  // const spotify_secret_key = process.env.REACT_APP_SPOTIFY_CLIENT_ID
-  // console.log(spotify_secret_key);
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [isLogin, setIsLogin] = useState({ status: false, params: {} });
+  const getAccessToken = (params) => {
+    if (params?.access_token) {
+      setIsLogin({ status: true, params: params });
+    }
+  };
+
+  return isLogin.status ? (
+    <Playlist params={isLogin.params} />
+  ) : (
+    <WebApp onLogin={getAccessToken} />
   );
 }
 

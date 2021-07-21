@@ -4,10 +4,11 @@ import './index.css';
 // import App from './App';
 import Homework from './container/Homework4/HomeWork'
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Homework />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
