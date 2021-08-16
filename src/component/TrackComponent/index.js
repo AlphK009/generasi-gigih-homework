@@ -1,20 +1,25 @@
 import React from 'react';
-//import Image from '../image';
+import AlbumName from '../Album';
+import ArtistName from '../Artists';
+import ButtonSelect from '../ButtonSelect';
+import ImageComponent from '../image';
+import SongTitle from '../Title';
 import './TrackComponent.css'
-
 const TrackComponent = (props) => {
     return (
         <div className="track-wrap">
             <div className="img-track">
-                <img src={props.url} alt="album"></img>
-               {/*  <Image/> */}
+             <ImageComponent images={props.url} alt={props.alte}/>
             </div>
             <div className="track-content">
-                <label className="song-title">{props.title}</label>
-                <label className="song-singer">{props.singer}</label>
-                <label className="song-album">{props.album}</label>
+                <SongTitle title={props.songtitle}/>
+                <ArtistName artists={props.artistsName}/>
+                <AlbumName album = {props.albumName}/>
+               <ButtonSelect button={props.buttonName}/>
             </div>
         </div>
+
     )
 }
 export default TrackComponent;
+

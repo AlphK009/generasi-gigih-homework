@@ -3,7 +3,6 @@ import React, { Component} from 'react';
 // import TrackComponent from '../../component/TrackComponent';
 import './HomeWork.css'
 // import data from '../../sample';
-import Login from '../../component/Login';
 
 
 class HomeWork extends Component {
